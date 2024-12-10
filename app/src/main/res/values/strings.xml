@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">QR &amp; BarCode Scanner</string>
+    <string name="splashText">QR And Bar Code Reader</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="enter_the_text_here">Enter the Text Here ...</string>
+    <string name="bar_code_generator">Bar Code Generator</string>
+    <string name="todo">TODO</string>
+    <string-array name="SelectionSpinner">
+        <item>Select Type</item>
+        <item>QR Code</item>
+        <item>Bar Code</item>
+    </string-array>
+
+    // from other project
+
+    <!--Essentials-->
+    <string name="please_wait">Please Wait…</string>
+
+    <!--Dummy-->
+    <string name="lorem_ipsum">
+
+    </string>
+
+    <!--Home page-->
+    <string name="generate">Generate</string>
+    <string name="history">History</string>
+    <string name="scan">Scan</string>
+    <string name="toolbar_title_generate">Generate QR Code</string>
+    <string name="toolbar_title_scan">Code Scanner</string>
+    <string name="toolbar_title_history">History</string>
+
+    <!--Settings page-->
+    <string name="settings">Settings</string>
+    <string name="play_sound">Play Sound</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="save_history">Save History</string>
+    <string name="copy_to_clipboard">Copy to Clipboard</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+<!--//More etc-->
+    <string name="privaci_policylink">https://skipeapps.blogspot.com/2021/02/privacy-policy.html</string>
+    <string name="more_apps">https://play.google.com/store/apps/developer?id=Skipe+Apps</string>
+    <!--    ADMOB TEST ADS IDs-->
+    <string name="admob_application_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="app_open_id" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner_scan_fragment_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="home_interstitial_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="back_activity_native_add_id" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="fargmentPhoto_native_add_id" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="fargmentSetting_native_add" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="selectionQrBar_native_add" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="createQrBar_native_add" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="scan_history_native_add" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="create_history_native_add" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="favorite_native_add" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+
+
+    <!--    ADMOB REAL ADS IDs-->
+    <!--    <string name="admob_application_id" translatable="false">ca-app-pub-1071479757136717~8155312417</string>-->
+    <!--    <string name="app_open_id" translatable="false">ca-app-pub-1071479757136717/3843537703</string>-->
+    <!--    <string name="banner_scan_fragment_id" translatable="false">ca-app-pub-1071479757136717/6255907389</string>-->
+    <!--    <string name="home_interstitial_id" translatable="false">ca-app-pub-1071479757136717/2316662374</string>-->
+    <!--    <string name="back_activity_native_add_id" translatable="false">ca-app-pub-1071479757136717/3893866646</string>-->
+    <!--    <string name="fargmentPhoto_native_add_id" translatable="false">ca-app-pub-1071479757136717/4933365890</string>-->
+    <!--    <string name="fargmentSetting_native_add" translatable="false">ca-app-pub-1071479757136717/1227615675</string>-->
+    <!--    <string name="selectionQrBar_native_add" translatable="false">ca-app-pub-1071479757136717/1718392655</string>-->
+    <!--    <string name="createQrBar_native_add" translatable="false">ca-app-pub-1071479757136717/1526820964</string>-->
+    <!--    <string name="scan_history_native_add" translatable="false">ca-app-pub-1071479757136717/3893866646</string>-->
+    <!--    <string name="create_history_native_add" translatable="false">ca-app-pub-1071479757136717/4933365890</string>-->
+    <!--    <string name="favorite_native_add" translatable="false">ca-app-pub-1071479757136717/1718392655</string>-->
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#48887B</color>
+    <color name="colorPrimaryDark">#48887B</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="card1">#d4cbe5</color>
+    <color name="card2">#7adccf</color>
+    <color name="card3">#f7c59f</color>
+    <color name="card4">#bd87f5</color>
+    <color name="card5Email">#991f00</color>
+    <color name="card6WhatsApp">#009900</color>
+    <color name="card7facebook">#3366ff</color>
+    <color name="card8youtube">#ff1a1a</color>
+    <color name="card9instagram">#ff751a</color>
+    <color name="animated">#48887B</color>
+    <color name="spinnercolor">#48887B</color>
+    <color name="colorHistory">#E6E7E8</color>
+
+</resources>
