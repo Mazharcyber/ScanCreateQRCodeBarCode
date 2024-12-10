@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/bgsecond"
+    android:orientation="vertical"
+    android:id="@+id/scroll_view"
+    tools:context=".uiApplication.activties.SelectionQrBrActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewImages"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/linearspinner"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/recyclerViewImages"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@color/spinnercolor">
+
+            <Spinner
+                android:id="@+id/selectType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:entries="@array/code_types"
+                android:gravity="center"
+                android:padding="@dimen/padding_8"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gp_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearspinner">
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:background="@drawable/card_all"
+                android:layout_below="@+id/linearspinner"
+                android:hint="@string/enter_the_text_here"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:gravity="center"
+                android:background="@drawable/card_all"
+                android:hint="Enter Title "
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/et_url"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:gravity="center"
+                android:background="@drawable/card_all"
+                android:hint="Enter Url "
+                android:inputType="textUri"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_contact_name"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:gravity="center"
+                android:background="@drawable/card_all"
+                android:hint="Enter Name "
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:gravity="center"
+                android:background="@drawable/card_all"
+                android:hint="Enter Phone Number "
+                android:inputType="phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_message"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:gravity="center"
+                android:background="@drawable/card_all"
+                android:hint="Enter Message "
+                android:inputType="textUri" />
+
+            <EditText
+                android:id="@+id/et_email_address"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:gravity="center"
+                android:background="@drawable/card_all"
+                android:hint="Enter Email "
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_email_subject"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:gravity="center"
+                android:background="@drawable/card_all"
+                android:hint="Enter Subject "
+                android:inputType="textEmailSubject" />
+
+            <EditText
+                android:id="@+id/et_email_body"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/height_100"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:gravity="center"
+                android:background="@drawable/card_all"
+                android:hint="Enter body "
+                android:inputType="text" />
+        </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/buttonCreate"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/create"
+        android:layout_below="@+id/gp_editor"
+        />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="242dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/buttonCreate"
+        android:contentDescription="@string/todo"
+        android:layout_centerInParent="true"
+        app:srcCompat="?attr/actionBarDivider" />
+    </RelativeLayout>
+</ScrollView>

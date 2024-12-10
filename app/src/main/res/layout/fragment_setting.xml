@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@drawable/gradient_title_bar_primary_color_and_accent_color"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="@dimen/margin_0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/settings" />
+
+        <TextView
+            android:id="@+id/text_view_play_sound"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:gravity="start|center_vertical"
+            android:text="@string/play_sound"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_body"
+            app:layout_constraintBottom_toTopOf="@+id/view_separator_play_sound"
+            app:layout_constraintEnd_toStartOf="@+id/switch_compat_play_sound"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginLeft="@dimen/margin_16" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_compat_play_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            app:layout_constraintBottom_toTopOf="@+id/view_separator_play_sound"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_play_sound"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginRight="@dimen/margin_16" />
+
+        <View
+            android:id="@+id/view_separator_play_sound"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_1"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/text_view_vibrate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_play_sound" />
+
+        <TextView
+            android:id="@+id/text_view_vibrate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:gravity="start|center_vertical"
+            android:text="@string/vibrate"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_body"
+            app:layout_constraintBottom_toTopOf="@+id/view_separator_vibrate"
+            app:layout_constraintEnd_toStartOf="@+id/switch_compat_vibrate"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator_play_sound"
+            android:layout_marginLeft="@dimen/margin_16" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_compat_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:checked="true"
+            app:layout_constraintBottom_toTopOf="@+id/view_separator_vibrate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_vibrate"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator_play_sound"
+            android:layout_marginRight="@dimen/margin_16" />
+
+        <View
+            android:id="@+id/view_separator_vibrate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_1"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/text_view_save_history"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_vibrate" />
+
+        <TextView
+            android:id="@+id/text_view_save_history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:gravity="start|center_vertical"
+            android:text="@string/save_history"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_body"
+            app:layout_constraintBottom_toTopOf="@+id/view_separator_save_history"
+            app:layout_constraintEnd_toStartOf="@+id/switch_compat_save_history"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator_vibrate"
+            android:layout_marginLeft="@dimen/margin_16" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_compat_save_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            app:layout_constraintBottom_toTopOf="@+id/view_separator_save_history"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_save_history"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator_vibrate"
+            android:layout_marginRight="@dimen/margin_16" />
+
+        <View
+            android:id="@+id/view_separator_save_history"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_1"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:background="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_save_history" />
+        <TextView
+            android:id="@+id/text_view_copy_to_clipboard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:gravity="start|center_vertical"
+            android:text="@string/copy_to_clipboard"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_body"
+            app:layout_constraintBottom_toTopOf="@+id/view_separator_copy_to_clipboard"
+            app:layout_constraintEnd_toStartOf="@+id/switch_compat_copy_to_clipboard"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator_save_history"
+            android:layout_marginLeft="@dimen/margin_16" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_compat_copy_to_clipboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            app:layout_constraintBottom_toTopOf="@+id/view_separator_copy_to_clipboard"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:checked="true"
+            app:layout_constraintStart_toEndOf="@+id/text_view_copy_to_clipboard"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator_save_history"
+            android:layout_marginRight="@dimen/margin_16" />
+
+        <View
+            android:id="@+id/view_separator_copy_to_clipboard"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_1"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:background="@color/colorAccent"
+            android:clickable="true"
+            app:layout_constraintBottom_toTopOf="@+id/text_view_copy_to_clipboard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_copy_to_clipboard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
